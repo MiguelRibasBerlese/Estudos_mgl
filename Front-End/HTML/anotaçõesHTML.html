@@ -1,0 +1,89 @@
+<!-- ? todo arquivo HTML precisa começar com <!DOCTYPE html> para informar ao navegador que o documento é HTML5. -->
+<!-- ? a estrutura basica de um HTML é composta por <html>, <head> e <body>. O <head> contém informações sobre o documento, e o <body> contém o conteúdo visível da página. -->
+<!-- ? o atributo "lang" dentro da tag <html> define o idioma da página. Ex: lang="pt-BR" para Português do Brasil. -->
+<!-- ? a tag <meta charset="UTF-8"> define a codificação de caracteres, permitindo o uso de acentos e caracteres especiais. -->
+<!-- ? a tag <meta name="viewport"> controla como a página é exibida em dispositivos móveis. O valor mais comum é content="width=device-width, initial-scale=1.0". -->
+<!-- ? a tag <title> define o título da aba do navegador. Ela fica dentro do <head>. -->
+<!-- ? para ligar um arquivo CSS ao HTML, usamos a tag <link> dentro do <head>, com os atributos rel="stylesheet" e href com o caminho do arquivo CSS. -->
+<!-- ? para ligar um arquivo JavaScript ao HTML, usamos a tag <script src="caminho.js"></script>, geralmente colocada no final do <body> para não travar o carregamento da página. -->
+<!-- ? usamos o atributo "id" para identificar um elemento único na página, e o atributo "class" para identificar um grupo de elementos com o mesmo estilo. -->
+<!-- ? tags semanticas são tags que descrevem o significado do conteúdo. Ex: <header>, <nav>, <main>, <section>, <article>, <aside> e <footer>. Elas melhoram a acessibilidade e o SEO da página. -->
+<!-- ? a diferença entre <div> e <span> é que o <div> é um elemento de bloco (ocupa toda a largura disponível) e o <span> é um elemento inline (ocupa apenas o espaço do conteúdo). -->
+<!-- ? o atributo "href" dentro da tag <a> define o destino do link. Pode ser uma URL, um caminho relativo ou um id de elemento na mesma página (âncora). Ex: href="#secao1". -->
+<!-- ? o atributo "target" dentro da tag <a> define onde o link será aberto. O valor "_blank" abre em uma nova aba. -->
+<!-- ? o atributo "alt" dentro da tag <img> define o texto alternativo da imagem, exibido quando a imagem não carrega. É obrigatório para acessibilidade. -->
+<!-- ? a diferença entre <strong> e <b> é que o <strong> tem significado semântico (indica importância), enquanto o <b> é apenas visual (negrito). O mesmo vale para <em> e <i>. -->
+<!-- ? o atributo "required" em campos de formulário torna o preenchimento obrigatório antes de enviar. -->
+<!-- ? o atributo "placeholder" dentro de <input> e <textarea> exibe um texto de exemplo dentro do campo antes do usuário digitar. -->
+<!-- ? o atributo "action" no <form> define para onde os dados serão enviados. O atributo "method" define como serão enviados: "get" (visível na URL) ou "post" (oculto no corpo da requisição). -->
+<!-- ? a tag <label> está associada a um campo de formulário pelo atributo "for", que deve ter o mesmo valor do "id" do campo. Isso melhora a acessibilidade e a usabilidade. -->
+
+<!--TODO Algumas tags basicas do HTML são:
+<!--TODO- <h1> a <h6>: para definir títulos e subtítulos, sendo <h1> o mais importante e <h6> o menos importante.
+<!--TODO- <p>: para definir um parágrafo de texto.
+<!--TODO- <a href="">: para definir um link.
+<!--TODO- <img src="" alt="">: para inserir uma imagem.
+<!--TODO- <br>: para quebrar uma linha (não tem tag de fechamento).
+<!--TODO- <hr>: para inserir uma linha horizontal divisória (não tem tag de fechamento).
+<!--TODO- <strong>: para deixar o texto em negrito com significado semântico.
+<!--TODO- <em>: para deixar o texto em itálico com significado semântico.
+<!--TODO- <ul>: para criar uma lista não ordenada (com marcadores).
+<!--TODO- <ol>: para criar uma lista ordenada (com números).
+<!--TODO- <li>: para definir cada item de uma lista, usado dentro de <ul> ou <ol>.
+<!--TODO- <div>: para criar um bloco genérico sem significado semântico.
+<!--TODO- <span>: para estilizar partes de um texto inline sem significado semântico.
+
+<!--TODO Algumas tags de formulário são:
+<!--TODO- <form>: para criar um formulário.
+<!--TODO- <input type="text">: campo de texto simples.
+<!--TODO- <input type="email">: campo de e-mail com validação automática.
+<!--TODO- <input type="password">: campo de senha (oculta os caracteres).
+<!--TODO- <input type="number">: campo numérico.
+<!--TODO- <input type="date">: campo de data com seletor de calendário.
+<!--TODO- <input type="checkbox">: caixa de seleção (múltiplas opções).
+<!--TODO- <input type="radio">: botão de opção (apenas uma opção do grupo).
+<!--TODO- <input type="file">: campo para envio de arquivos.
+<!--TODO- <input type="submit">: botão para enviar o formulário.
+<!--TODO- <input type="reset">: botão para limpar o formulário.
+<!--TODO- <textarea>: campo de texto com múltiplas linhas.
+<!--TODO- <select>: lista suspensa de opções.
+<!--TODO- <option>: cada item dentro de um <select>.
+<!--TODO- <button type="submit">: botão de envio do formulário.
+<!--TODO- <label for="">: rótulo associado a um campo.
+
+<!--TODO Algumas tags semanticas são:
+<!--TODO- <header>: cabeçalho da página ou de uma seção.
+<!--TODO- <nav>: bloco de navegação com links.
+<!--TODO- <main>: conteúdo principal da página (deve ser único).
+<!--TODO- <section>: seção temática do conteúdo.
+<!--TODO- <article>: conteúdo independente e reutilizável (ex: post, notícia).
+<!--TODO- <aside>: conteúdo complementar ao principal (ex: barra lateral).
+<!--TODO- <footer>: rodapé da página ou de uma seção.
+<!--TODO- <figure>: agrupa uma imagem com sua legenda.
+<!--TODO- <figcaption>: legenda de uma imagem dentro de <figure>.
+
+<!--TODO Algumas tags de tabela são:
+<!--TODO- <table>: para criar uma tabela.
+<!--TODO- <thead>: agrupa o cabeçalho da tabela.
+<!--TODO- <tbody>: agrupa o corpo da tabela.
+<!--TODO- <tfoot>: agrupa o rodapé da tabela.
+<!--TODO- <tr>: define uma linha da tabela.
+<!--TODO- <th>: define uma célula de cabeçalho (negrito e centralizado por padrão).
+<!--TODO- <td>: define uma célula de dados.
+<!--TODO- colspan="n": faz uma célula ocupar n colunas.
+<!--TODO- rowspan="n": faz uma célula ocupar n linhas.
+
+<!--TODO Algumas tags de midia são:
+<!--TODO- <video src="" controls>: para inserir um vídeo com controles de reprodução.
+<!--TODO- <audio src="" controls>: para inserir um áudio com controles de reprodução.
+<!--TODO- <iframe src="">: para incorporar outro site ou documento dentro da página.
+<!--TODO- <source src="" type="">: define múltiplas fontes para <video> ou <audio>.
+
+<!--TODO Alguns atributos globais importantes são:
+<!--TODO- id="": identificador único do elemento.
+<!--TODO- class="": define uma ou mais classes CSS no elemento.
+<!--TODO- style="": aplica CSS diretamente no elemento (inline).
+<!--TODO- title="": exibe uma dica ao passar o mouse sobre o elemento.
+<!--TODO- hidden: oculta o elemento da página.
+<!--TODO- data-*="": permite armazenar dados personalizados no elemento. Ex: data-id="123".
+<!--TODO- tabindex="": define a ordem de navegação pelo teclado.
