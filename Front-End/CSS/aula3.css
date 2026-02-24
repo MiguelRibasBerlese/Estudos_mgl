@@ -1,0 +1,29 @@
+/*! Aqui estou deixando toda a página com letra preta e fundo cinza claro. */
+*{
+    background-color: lightgray;
+    color: black;
+}
+
+/*! Aqui estou deixando todas as tag's h1 com letra amarelas e fundo da frase preto.*/
+/*! Tambem apliquei uma altura fixa de 50pixeis, padding para centralizar o conteúdo verticalmente, margin para espassar o titulo verticalmente e removi as bordas.*/
+/*! Aplicando assim o conceito de box model, onde a borda é a parte mais externa, depois vem a margem e por fim o padding. */
+h1{
+    color: yellow;
+    background-color: black;
+    height: 50px;
+    padding: 15px 20px 15px 20px;
+    margin: 10px 0px 10px 0px;
+    border: none;
+}
+
+/*! Aqui estou deixando todas as seções com a classe "titulo-secao" com letra branca e fundo rosa claro. */
+.titulo-secao{
+    color: white;
+    background-color: lightcoral;
+}
+
+/*! Aqui estou deixando apenas o titulo h3 com o id "tempo" com letra branca e fundo azul claro. */
+#tempo{
+    color: white;
+    background-color: lightblue;
+}

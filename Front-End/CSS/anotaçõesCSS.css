@@ -8,6 +8,11 @@
 /*TODO Alguns comandos basicos de CSS são:
 /*TODO- color: para definir a cor do texto.
 /*TODO- background-color: para definir a cor de fundo de um elemento.
+/*TODO- padding: para definir o espaçamento interno de um elemento, sendo a primeira propriedade o padding-top, a segunda o padding-right, a terceira o padding-bottom e a quarta o padding-left(cima, direita, baixo e esquerda).
+/*TODO- margin: para definir o espaçamento externo de um elemento, que podemos remove-la definindo seu valor para 0 ou qualquer outro valor desejado.
+/*TODO- border: para definir a borda de um elemento, sendo a primeira propriedade a largura da borda, a segunda o estilo da borda e a terceira a cor da borda, pode ser usado o "none" para remove-la.
+/*TODO- height: para definir a altura de um elemento.
+/*TODO- width: para definir a largura de um elemento.
 
 
     
