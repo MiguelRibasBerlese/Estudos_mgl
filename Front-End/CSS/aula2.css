@@ -1,0 +1,23 @@
+/*! Aqui estou deixando toda a página com letra preta e fundo cinza claro. */
+*{
+    background-color: lightgray;
+    color: black;
+}
+
+/*! Aqui estou deixando todas as tag's h1 com letra amarelas e fundo da frase preto. */
+h1{
+    color: yellow;
+    background-color: black;
+}
+
+/*! Aqui estou deixando todas as seções com a classe "titulo-secao" com letra branca e fundo rosa claro. */
+.titulo-secao{
+    color: white;
+    background-color: lightcoral;
+}
+
+/*! Aqui estou deixando apenas o titulo h3 com o id "tempo" com letra branca e fundo azul claro. */
+#tempo{
+    color: white;
+    background-color: lightblue;
+}

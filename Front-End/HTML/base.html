@@ -3,32 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Contato</title>
-    <link rel="stylesheet" href="../CSS/aula1.css">
+    <title>Portal de Notícias</title>
+    <link rel="stylesheet" href="../CSS/aula2.css">
 </head>
 <body>
-    <h1>Formulário de Contato</h1>
-    
-    <form>
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" name="nome" required><br>
-        
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br>
-        
-        <label for="assunto">Assunto:</label><br>
-        <select id="assunto" name="assunto">
-            <option value="">Selecione...</option>
-            <option value="duvida">Dúvida</option>
-            <option value="sugestao">Sugestão</option>
-            <option value="outros">Outros</option>
-        </select><br>
-        
-        <label for="mensagem">Mensagem:</label><br>
-        <textarea id="mensagem" name="mensagem" rows="5" required></textarea><br>
-        
-        <button type="submit" class="botaoenvio">Enviar</button><br>
-        <button type="reset" class="botaolimpar">Limpar</button><br>
-    </form>
+
+    <!-- BARRA DE UTILIDADES -->
+    <div class="barra-util">
+        <span class="data">Segunda-feira, 24 de Fevereiro de 2026</span>
+        <nav class="nav-util">
+            <a href="#">Login</a>
+            <a href="#">Cadastre-se</a>
+            <a href="#">Newsletter</a>
+        </nav>
+    </div>
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+        <div class="logo">
+            <h1>&#128240; Portal News</h1>
+            <p class="slogan">Informação que você pode confiar</p>
+        </div>
+        <div class="busca">
+            <input type="text" placeholder="Buscar notícias...">
+            <button type="button">Buscar</button>
+        </div>
+    </header>
+
+    <!-- NAVEGAÇÃO PRINCIPAL -->
+    <nav class="nav-principal">
+        <ul>
+            <li><a href="#" class="ativo">Início</a></li>
+            <li><a href="#">Política</a></li>
+            <li><a href="#">Economia</a></li>
+            <li><a href="#">Tecnologia</a></li>
+            <li><a href="#">Esportes</a></li>
+            <li><a href="#">Entretenimento</a></li>
+            <li><a href="#">Ciência</a></li>
+            <li><a href="#">Mundo</a></li>
+        </ul>
+    </nav>
+
+    <!-- NOTÍCIAS EM DESTAQUE (BREAKING NEWS) -->
+    <div class="breaking-news">
+        <span class="label-breaking">AO VIVO</span>
+        <p>Conferência internacional sobre mudanças climáticas reúne líderes de mais de 100 países em Genebra.</p>
+    </div>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="conteudo-principal">
+
+        <!-- COLUNA DE NOTÍCIAS -->
+        <section class="noticias">
+
+            <!-- NOTÍCIA DESTAQUE -->
+            <article class="noticia-destaque">
+                <img src="https://placehold.co/800x400" alt="Imagem principal da notícia">
+                <div class="info-noticia">
+                    <span class="categoria categoria-tecnologia">Tecnologia</span>
+                    <h2><a href="#">Inteligência Artificial revoluciona o mercado de trabalho em 2026</a></h2>
+                    <p class="resumo">Especialistas apontam que mais de 40% das tarefas repetitivas já são realizadas por sistemas automatizados, criando novos perfis profissionais e desafios para a educação global.</p>
+                    <div class="meta-noticia">
+                        <span class="autor">Por João Silva</span>
+                        <span class="tempo">Há 2 horas</span>
+                        <span class="comentarios">&#128172; 34 comentários</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- GRADE DE NOTÍCIAS -->
+            <div class="grade-noticias">
+
+                <article class="card-noticia">
+                    <img src="https://placehold.co/400x220" alt="Imagem da notícia">
+                    <div class="card-corpo">
+                        <span class="categoria categoria-economia">Economia</span>
+                        <h3><a href="#">Bolsa de valores atinge novo recorde histórico após dados positivos</a></h3>
+                        <p>O índice Ibovespa fechou em alta de 3,2%, impulsionado pelo setor de commodities e pela queda da inflação.</p>
+                        <div class="meta-noticia">
+                            <span class="autor">Por Ana Costa</span>
+                            <span class="tempo">Há 4 horas</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card-noticia">
+                    <img src="https://placehold.co/400x220" alt="Imagem da notícia">
+                    <div class="card-corpo">
+                        <span class="categoria categoria-esportes">Esportes</span>
+                        <h3><a href="#">Seleção Brasileira convoca novos jogadores para as eliminatórias</a></h3>
+                        <p>O técnico anunciou a lista com surpresas, incluindo três estreantes e o retorno de um veterano após lesão.</p>
+                        <div class="meta-noticia">
+                            <span class="autor">Por Carlos Mendes</span>
+                            <span class="tempo">Há 5 horas</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card-noticia">
+                    <img src="https://placehold.co/400x220" alt="Imagem da notícia">
+                    <div class="card-corpo">
+                        <span class="categoria categoria-politica">Política</span>
+                        <h3><a href="#">Congresso aprova projeto de lei sobre regulamentação das redes sociais</a></h3>
+                        <p>A medida, debatida por dois anos, estabelece novas regras para plataformas digitais e proteção de dados de menores.</p>
+                        <div class="meta-noticia">
+                            <span class="autor">Por Mariana Lopes</span>
+                            <span class="tempo">Há 6 horas</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card-noticia">
+                    <img src="https://placehold.co/400x220" alt="Imagem da notícia">
+                    <div class="card-corpo">
+                        <span class="categoria categoria-ciencia">Ciência</span>
+                        <h3><a href="#">Pesquisadores descobrem novo método para captura de carbono atmosférico</a></h3>
+                        <p>O estudo publicado na revista Nature aponta que a técnica pode ser 5 vezes mais eficiente que os métodos atuais.</p>
+                        <div class="meta-noticia">
+                            <span class="autor">Por Pedro Alves</span>
+                            <span class="tempo">Há 8 horas</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- SEÇÃO DE MAIS NOTÍCIAS (lista) -->
+            <section class="mais-noticias">
+                <h2 class="titulo-secao">Últimas Notícias</h2>
+                <ul class="lista-noticias">
+                    <li>
+                        <span class="categoria categoria-mundo">Mundo</span>
+                        <a href="#">ONU debate crise humanitária no leste europeu em sessão emergencial</a>
+                        <span class="tempo">Há 1 hora</span>
+                    </li>
+                    <li>
+                        <span class="categoria categoria-entretenimento">Entretenimento</span>
+                        <a href="#">Festival de cinema anuncia filmes favoritos ao prêmio principal desta edição</a>
+                        <span class="tempo">Há 3 horas</span>
+                    </li>
+                    <li>
+                        <span class="categoria categoria-tecnologia">Tecnologia</span>
+                        <a href="#">Nova atualização do sistema operacional traz recursos de acessibilidade avançados</a>
+                        <span class="tempo">Há 5 horas</span>
+                    </li>
+                    <li>
+                        <span class="categoria categoria-economia">Economia</span>
+                        <a href="#">Taxa de desemprego cai pelo quarto mês consecutivo segundo dados do IBGE</a>
+                        <span class="tempo">Há 7 horas</span>
+                    </li>
+                    <li>
+                        <span class="categoria categoria-esportes">Esportes</span>
+                        <a href="#">Final do campeonato estadual tem ingressos esgotados em menos de 2 horas</a>
+                        <span class="tempo">Há 9 horas</span>
+                    </li>
+                </ul>
+            </section>
+
+        </section>
+
+        <!-- BARRA LATERAL -->
+        <aside class="barra-lateral">
+
+            <!-- MAIS LIDAS -->
+            <div class="widget">
+                <h3 class="widget-titulo">Mais Lidas</h3>
+                <ol class="ranking-noticias">
+                    <li><a href="#">Governo anuncia novo pacote de infraestrutura no valor de R$ 50 bilhões</a></li>
+                    <li><a href="#">Startup brasileira é avaliada em US$ 1 bilhão e se torna novo unicórnio</a></li>
+                    <li><a href="#">Estudos confirmam benefícios do jejum intermitente para saúde cardiovascular</a></li>
+                    <li><a href="#">Chuvas intensas causam alerta em cinco estados do Sul e Sudeste</a></li>
+                    <li><a href="#">Novo modelo de carro elétrico nacional é lançado com preço acessível</a></li>
+                </ol>
+            </div>
+
+            <!-- NEWSLETTER -->
+            <div class="widget widget-newsletter">
+                <h3 class="widget-titulo">Receba as notícias</h3>
+                <p>Cadastre seu e-mail e receba as principais notícias do dia.</p>
+                <form class="form-newsletter">
+                    <input type="email" placeholder="seu@email.com">
+                    <button type="submit">Assinar</button>
+                </form>
+            </div>
+
+            <!-- PREVISÃO DO TEMPO -->
+            <div class="widget widget-tempo">
+                <h3 class="widget-titulo" id="tempo">Previsão do Tempo</h3>
+                <div class="tempo-info">
+                    <span class="cidade">São Paulo, SP</span>
+                    <span class="temperatura">28°C</span>
+                    <span class="condicao">&#9728; Parcialmente nublado</span>
+                </div>
+                <ul class="previsao-dias">
+                    <li><span>Ter</span><span>&#127783;</span><span>31°C / 22°C</span></li>
+                    <li><span>Qua</span><span>&#127783;</span><span>29°C / 21°C</span></li>
+                    <li><span>Qui</span><span>&#9925;</span><span>24°C / 18°C</span></li>
+                    <li><span>Sex</span><span>&#128267;</span><span>22°C / 17°C</span></li>
+                </ul>
+            </div>
+
+            <!-- TAGS POPULARES -->
+            <div class="widget">
+                <h3 class="widget-titulo">Tags Populares</h3>
+                <div class="tags">
+                    <a href="#" class="tag">Política</a>
+                    <a href="#" class="tag">Economia</a>
+                    <a href="#" class="tag">IA</a>
+                    <a href="#" class="tag">Eleições</a>
+                    <a href="#" class="tag">Futebol</a>
+                    <a href="#" class="tag">Saúde</a>
+                    <a href="#" class="tag">Tecnologia</a>
+                    <a href="#" class="tag">Clima</a>
+                    <a href="#" class="tag">Educação</a>
+                    <a href="#" class="tag">Mercado</a>
+                </div>
+            </div>
+
+        </aside>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+        <div class="rodape-colunas">
+            <div class="rodape-coluna">
+                <h4>Portal News</h4>
+                <p>Seu portal de notícias com cobertura completa dos principais acontecimentos do Brasil e do mundo.</p>
+            </div>
+            <div class="rodape-coluna">
+                <h4>Editorias</h4>
+                <ul>
+                    <li><a href="#">Política</a></li>
+                    <li><a href="#">Economia</a></li>
+                    <li><a href="#">Tecnologia</a></li>
+                    <li><a href="#">Esportes</a></li>
+                </ul>
+            </div>
+            <div class="rodape-coluna">
+                <h4>Institucional</h4>
+                <ul>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Fale conosco</a></li>
+                    <li><a href="#">Política de privacidade</a></li>
+                    <li><a href="#">Termos de uso</a></li>
+                </ul>
+            </div>
+            <div class="rodape-coluna">
+                <h4>Redes Sociais</h4>
+                <ul>
+                    <li><a href="#">&#128247; Instagram</a></li>
+                    <li><a href="#">&#128038; Twitter / X</a></li>
+                    <li><a href="#">&#128100; Facebook</a></li>
+                    <li><a href="#">&#127909; YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="rodape-fundo">
+            <p>&copy; 2026 Portal News. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
 </body>
 </html>

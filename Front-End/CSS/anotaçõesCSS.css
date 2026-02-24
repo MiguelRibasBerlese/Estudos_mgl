@@ -1,6 +1,9 @@
 /*? usamos o "." quando queremos chamar uma classe, e o "#" quando queremos chamar um id. */
 /*? no HTML usamos dentro das tags o atributo "class" para definir uma classe, e o atributo "id" para definir um id. */
 /*? para ligar o arquivo CSS ao HTML, usamos a tag <link> dentro do <head> do HTML, com os atributos "rel" e "href". Sendo o "rel" com o valor "stylesheet" e o "href" com o caminho do arquivo CSS. */
+/*? podemos usar o seletor universal "*" para aplicar estilos a todos os elementos da página. */ 
+/*? no css temos sistema de hierarquia, ou seja, o estilo mais específico tem prioridade sobre o estilo mais geral. Por exemplo, um estilo aplicado a uma tag h1 tem prioridade sobre um estilo aplicado a todas as tags com o seletor universal. */
+/*? se eu tiver duas ou mais classes que devem ser passadas parametros iguals, posso usar a virgula para separar as classes e passar os parametros para todas elas. */
 
 /*TODO Alguns comandos basicos de CSS são:
 /*TODO- color: para definir a cor do texto.
